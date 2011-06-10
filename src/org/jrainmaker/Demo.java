@@ -13,7 +13,7 @@ public class Demo {
 
 	public static void main(String[] args) throws RainMakerException {
 
-		String apiKey = "5a4d0e98e418e23a";
+		String apiKey = "Your api key goes here";
 
 		String email = "lorangb@gmail.com";
 
