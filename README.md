@@ -4,7 +4,7 @@ A Java wrapper for the [Rainmaker API](http://rainmaker.cc/api)
 
 ##How to use ?
  
-* Declaring an instance of RainMaker
+* Declare an instance of RainMaker
 
                 String apiKey = "Your api key goes here";
                 RainMaker maker = new RainMaker(apiKey);
@@ -15,20 +15,22 @@ A Java wrapper for the [Rainmaker API](http://rainmaker.cc/api)
 
 		RainMakerEntity entity = maker.getPersonInformation(email);
 
+* Status Code of the Request
 
-		System.out.println("-- Status Code --");
-		System.out.println("Status Code : " + entity.getStatusCode());
+		System.out.println("Status Code : " + entity.getStatusCode());		
 
-		System.out.println();
+* Getting the Contact Info
 
 		System.out.println("-- Contact Info --");
 
 		ContactInfo contactInfo = entity.getContactInfo();
+
 		System.out.println("Full name : " + contactInfo.getFullName());
 		System.out.println("Given name : " + contactInfo.getGivenName());
 		System.out.println("Family name : " + contactInfo.getFamilyName());
+		
 
-		System.out.println();
+* Getting a list of Chat Clients & Handles
 
 		System.out.println("-- Chats --");
 
@@ -39,8 +41,7 @@ A Java wrapper for the [Rainmaker API](http://rainmaker.cc/api)
 			System.out.println();
 		}
 
-		System.out.println();
-		System.out.println("-- Organizations --");
+* Getting a list of Organizations
 
 		List<Organizations> organizations = entity.getOrganizations();
 
@@ -49,11 +50,9 @@ A Java wrapper for the [Rainmaker API](http://rainmaker.cc/api)
 			System.out.println(org.getOrganizationTitle());
 			System.out.println(org.getOrganizationStartDate());
 			System.out.println();
-
 		}
 
-		System.out.println();
-		System.out.println("-- Photos --");
+* Getting a list of Photos (e.g. Flickr, Picassa, etc)
 
 		List<Photos> photos = entity.getPhotos();
 
@@ -63,8 +62,7 @@ A Java wrapper for the [Rainmaker API](http://rainmaker.cc/api)
 			System.out.println();
 		}
 
-		System.out.println();
-		System.out.println("-- Social Profiles --");
+* Getting a list of Social Profiles (e.g. Facebook, Twitter, etc)
 
 		List<SocialProfiles> profiles = entity.getSocialProfiles();
 
@@ -76,8 +74,7 @@ A Java wrapper for the [Rainmaker API](http://rainmaker.cc/api)
 			System.out.println("currentStatus : " + profile.getCurrentStatus());
 			System.out.println("currentStatusTimestamp : " + profile.getCurrentStatusTimestamp());
 			System.out.println("connections : " + profile.getConnections());
-			System.out.println("bio : " + profile.getBio());
-			
+			System.out.println("bio : " + profile.getBio());			
 			
 			System.out.println();
 		}
