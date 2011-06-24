@@ -8,19 +8,22 @@ public class ContactInfo {
 
 	@SerializedName("familyName")
 	private String familyName;
-	
+
 	@SerializedName("fullName")
 	private String fullName;
-	
+
 	@SerializedName("givenName")
 	private String givenName;
-	
+
 	@SerializedName("emailAddresses")
 	private List<String> emailAddress;
 
 	@SerializedName("chats")
 	private List<Chats> chats;
-	
+
+	@SerializedName("phoneNumbers")
+	private List<String> phoneNumbers;
+
 	public String getFamilyName() {
 		return familyName;
 	}
@@ -60,8 +63,13 @@ public class ContactInfo {
 	public List<Chats> getChats() {
 		return chats;
 	}
-	
-	
-	
-	
+
+	public void setPhoneNumbers(List<String> phoneNumbers) {
+		this.phoneNumbers = phoneNumbers;
+	}
+
+	public List<String> getPhoneNumbers() {
+		return phoneNumbers;
+	}
+
 }
