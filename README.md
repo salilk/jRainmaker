@@ -37,6 +37,14 @@ A Java wrapper for the [Rainmaker API](http://rainmaker.cc/api)
 			System.out.println();
 		}
 
+* Getting a list of Phone Numbers
+
+        List<String> phoneNumbers = contactInfo.getPhoneNumbers();
+
+		for (String phoneNumber : phoneNumbers) {
+			System.out.println(phoneNumber);
+		}
+		
 * Getting a list of Organizations
 
 		List<Organizations> organizations = entity.getOrganizations();
