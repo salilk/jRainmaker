@@ -27,7 +27,7 @@ A Java wrapper for the [Rainmaker API](http://rainmaker.cc/api)
 		System.out.println("Family name : " + contactInfo.getFamilyName());
 		
 
-* Getting a list of Chat Clients & Handles
+* List of Chat Clients & Handles
 
 		List<Chats> chats = contactInfo.getChats();
 		
@@ -37,7 +37,7 @@ A Java wrapper for the [Rainmaker API](http://rainmaker.cc/api)
 			System.out.println();
 		}
 
-* Getting a list of Phone Numbers
+* List of Phone Numbers
 
         List<String> phoneNumbers = contactInfo.getPhoneNumbers();
 
@@ -45,7 +45,7 @@ A Java wrapper for the [Rainmaker API](http://rainmaker.cc/api)
 			System.out.println(phoneNumber);
 		}
 		
-* Getting a list of Organizations
+* List of Organizations
 
 		List<Organizations> organizations = entity.getOrganizations();
 
@@ -56,7 +56,7 @@ A Java wrapper for the [Rainmaker API](http://rainmaker.cc/api)
 			System.out.println();
 		}
 
-* Getting a list of Photos (e.g. Flickr, Picassa, etc)
+* List of Photos (e.g. Flickr, Picassa, etc)
 
 		List<Photos> photos = entity.getPhotos();
 
@@ -66,7 +66,7 @@ A Java wrapper for the [Rainmaker API](http://rainmaker.cc/api)
 			System.out.println();
 		}
 
-* Getting a list of Social Profiles (e.g. Facebook, Twitter, etc)
+* List of Social Profiles (e.g. Facebook, Twitter, etc)
 
 		List<SocialProfiles> profiles = entity.getSocialProfiles();
 
